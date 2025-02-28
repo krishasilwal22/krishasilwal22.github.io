@@ -28,30 +28,30 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="assets/KRISHA_SILWAL_DATA.pdf" download>Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="assets/KRISHA_SILWAL_DATA.pdf" target="_blank" download>Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <header id="home" class="hero">
-        <div class="container">
-            <!-- Left Side: Text -->
-            <div class="text-content">
-                <h1>Hi, I am <span class="highlight">Krisha Silwal</span></h1>
+        <div class="hero-content">
+            <h1>Hi, I am <span class="highlight">Krisha Silwal</span></h1>
 
-                <!-- LinkedIn Button -->
-                <div class="buttons">
-                    <a href="https://www.linkedin.com/in/krishasilwal/" target="_blank" class="btn linkedin">
-                        <i class="fab fa-linkedin"></i> Connect on LinkedIn
-                    </a>
-                </div>
-            </div>
-
-            <!-- Right Side: Profile Picture -->
+            <!-- Profile Picture -->
             <div class="profile-container">
                 <img src="images/profile.jpg" alt="Krisha Silwal" class="profile-img">
+            </div>
+
+            <!-- LinkedIn & Resume Buttons -->
+            <div class="buttons">
+                <a href="https://www.linkedin.com/in/krishasilwal/" target="_blank" class="btn linkedin">
+                    <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                </a>
+                <a href="assets/KRISHA_SILWAL_DATA.pdf" target="_blank" class="btn resume">
+                    <i class="fas fa-file-alt"></i> View/Download Resume
+                </a>
             </div>
         </div>
     </header>
@@ -68,9 +68,21 @@
         <p>Highlight your key projects here.</p>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/xrbenblq" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
     <footer>
         <p>© 2025 Krisha Silwal | All rights reserved.</p>
     </footer>
 
 </body>
 </html>
+
