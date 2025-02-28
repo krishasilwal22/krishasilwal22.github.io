@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,7 +22,7 @@
     <!-- Home Section -->
     <section id="home" class="centered-section">
         <h1>Hello, I am <span class="highlight">Krisha Silwal</span></h1>
-        <img src="assets/profile.jpg" alt="Krisha Silwal" class="profile-pic">
+        <img src="profile.jpg" alt="Krisha Silwal" class="profile-pic">
         <div class="buttons">
             <a href="https://www.linkedin.com/in/krishasilwal/" class="btn">Connect on LinkedIn</a>
             <a href="assets/KRISHA_SILWAL_DATA.pdf" class="btn" download>View/Download Resume</a>
@@ -38,13 +38,9 @@
                 My work involves statistical analysis, data visualization, and data-driven research to uncover insights that support informed decision-making.
             </p>
             <p>
-                I approach data with a focus on clarity and real-world relevance, ensuring that my analysis is not just technically accurate but also meaningful. 
-                I enjoy breaking down complex datasets, identifying patterns and trends, and understanding how data reflects different aspects of decision-making and problem-solving.
-            </p>
-            <p>
-                This portfolio showcases projects where I have applied data analysis to explore fundamental concepts in programming, machine learning, and statistical modeling. 
+                This portfolio showcases projects where I have applied data analysis to explore fundamental concepts in programming, machine learning, and statistical modeling.
                 Through these projects, I have gained experience in working with real-world datasets, refining my technical skills, and developing a structured approach to problem-solving. 
-                These experiences are helping me build a strong foundation in data analysis, which I aim to apply to research on economic inequality, labor markets, and gender-based economic disparities in the future.
+                These experiences are helping me build a strong foundation in data analysis, which I aim to apply to research on economic inequality, labor markets, and gender-based economic disparities.
             </p>
         </div>
     </section>
@@ -53,62 +49,77 @@
     <section id="projects">
         <h2>Projects</h2>
         <div class="project-grid">
-
+            
             <!-- Project 1 -->
-            <div class="project-card" onclick="toggleProject('project1')">
+            <div class="project-card">
                 <h3>Hand Tracking & Object Interaction</h3>
                 <p>Developed a real-time hand tracking system using Python & OpenCV.</p>
                 <span class="expand">Expand ⬇</span>
-                <div id="project1" class="project-details">
-                    <h4>Problem Statement:</h4>
-                    <p>For people with limited motor control, using a mouse or keyboard can be challenging. We wanted to explore an alternative way to interact with technology that didn’t rely on traditional input devices.</p>
-                    <h4>What We Built:</h4>
-                    <p>We developed a real-time hand tracking system that allows users to move blocks on a screen using only their hands. A webcam detects hand positions and gestures, enabling users to grab, move, and stack virtual objects.</p>
+                <div class="project-details">
+                    <h4>What We Built</h4>
+                    <p>We developed a real-time hand tracking system that allows users to move blocks on a screen using only their hands.</p>
                     <h4>Technologies Used:</h4>
                     <ul>
                         <li>Python – Program logic for hand tracking</li>
                         <li>OpenCV – Capturing video and detecting hand movements</li>
                         <li>cvzone – Simplified gesture-based interactions</li>
                     </ul>
-                    <h4>Impact & Future Improvements:</h4>
-                    <p>The system provided a touch-free way to interact with digital objects. However, it worked best in well-lit environments and required steady hand movements. Future improvements could include better tracking in low-light conditions and adaptive settings for users with different mobility needs.</p>
+                    <h4>Impact & Future Improvements</h4>
+                    <p>The system provided a touch-free way to interact with digital objects, making it an interesting step toward more accessible technology.</p>
+                    <iframe width="300" height="200" src="https://www.youtube.com/embed/4lBFk8a7XFk" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
 
             <!-- Project 2 -->
-            <div class="project-card" onclick="toggleProject('project2')">
+            <div class="project-card">
                 <h3>Analyzing the Gender Pay Gap</h3>
                 <p>Used Excel & regression models to explore wage disparities across states.</p>
                 <span class="expand">Expand ⬇</span>
-                <div id="project2" class="project-details">
-                    <h4>Problem Statement:</h4>
-                    <p>Even though the gender pay gap is widely discussed, the specific factors driving wage differences across states aren’t always clear. This project analyzed how economic policies and labor conditions impact wage disparities.</p>
-                    <h4>Technologies Used:</h4>
+                <div class="project-details">
+                    <h4>What I Did & How It Works:</h4>
                     <ul>
-                        <li>Excel – Data collection, regression modeling, and data visualization</li>
+                        <li>Collected wage data from 25 U.S. states</li>
+                        <li>Used Excel’s regression analysis to test predictive factors</li>
+                        <li>Examined correlations to identify policy impacts</li>
                     </ul>
+                    <h4>Findings & Impact</h4>
+                    <p>Minimum wage policies and labor force participation correlated with the gender pay gap but didn't fully explain disparities.</p>
+                    <h4>Upload Dataset:</h4>
+                    <input type="file" id="fileUploadProject2">
                 </div>
             </div>
 
             <!-- Project 3 -->
-            <div class="project-card" onclick="toggleProject('project3')">
+            <div class="project-card">
                 <h3>Machine Learning for Employee Data</h3>
                 <p>Built ML models to predict employee purchases using data cleaning & imputation.</p>
                 <span class="expand">Expand ⬇</span>
-                <div id="project3" class="project-details">
-                    <h4>Technologies Used:</h4>
+                <div class="project-details">
+                    <h4>What I Did & How It Works:</h4>
                     <ul>
-                        <li>Excel – Data cleaning, imputation, and early exploratory analysis</li>
-                        <li>Tableau – Data visualization and confusion matrix evaluation</li>
+                        <li>Cleaned and formatted raw employee data</li>
+                        <li>Used Tableau for visualization of purchasing patterns</li>
+                        <li>Created a confusion matrix to test accuracy</li>
                     </ul>
+                    <h4>Findings & Impact</h4>
+                    <p>Cleaning data significantly improved model accuracy, showing how data quality affects ML outcomes.</p>
+                    <h4>Upload Dataset:</h4>
+                    <input type="file" id="fileUploadProject3">
                 </div>
             </div>
 
             <!-- Project 4 -->
             <div class="project-card">
                 <h3>Transgender Inclusion in Nepal</h3>
-                <p>Research paper analyzing legal barriers to gender identity recognition.</p>
-                <a href="https://digitalcommons.augustana.edu/cgi/viewcontent.cgi?article=1063&context=wollstonecraftaward" class="btn">Read Paper</a>
+                <p>Research analyzing legal barriers to gender identity recognition.</p>
+                <span class="expand">Expand ⬇</span>
+                <div class="project-details">
+                    <h4>What I Did</h4>
+                    <p>Used data analysis techniques to examine how Nepal’s gender laws impact employment and economic inequality.</p>
+                    <h4>Findings & Impact</h4>
+                    <p>Only 10 individuals have successfully changed their gender marker, highlighting legal barriers to recognition.</p>
+                    <a href="https://digitalcommons.augustana.edu/cgi/viewcontent.cgi?article=1063&context=wollstonecraftaward" class="btn">Read Paper</a>
+                </div>
             </div>
         </div>
     </section>
