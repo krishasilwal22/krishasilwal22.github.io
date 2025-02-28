@@ -13,87 +13,44 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
     <!-- Link to JavaScript -->
     <script defer src="script.js"></script>
 </head>
 <body>
 
+    <!-- Hero Section with Background Animation -->
     <header class="hero">
-    <div class="overlay"></div> <!-- Background Overlay -->
-    <div class="container">
-        <h2>Hello, I'm</h2>
-        <h1>Krisha Silwal</h1>
-        <p>Data Science & Economics Student | Passionate About Visualization & Analytics</p>
+        <div class="container">
+            <!-- Left Side: Text -->
+            <div class="text-content">
+                <h2>Hi There,</h2>
+                <h1>I'm <span class="highlight">Krisha</span> Silwal</h1>
+                <p>I Am Into <span class="typed-text">Data Science & Analytics</span></p>
 
-        <!-- Profile Picture -->
-        <img src="images/profile.JPG" alt="Krisha Silwal" class="profile-img">
+                <!-- Buttons -->
+                <div class="buttons">
+                    <a href="assets/resume.pdf" class="btn solid" download>📄 My Resume</a>
+                    <a href="#about" class="btn outline">Get to Know Me</a>
+                </div>
 
-        <!-- Buttons -->
-        <div class="buttons">
-            <a href="assets/resume.pdf" class="btn outline" download>📄 My Resume</a>
-            <a href="#about" class="btn solid">Get to Know Me</a>
+                <!-- Social Icons -->
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/krishasilwal22" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Right Side: Profile Picture -->
+            <div class="profile-container">
+                <img src="images/profile.jpg" alt="Krisha Silwal" class="profile-img">
+            </div>
         </div>
-    </div>
-</header>
-
-    <!-- About Me Section -->
-    <section id="about" class="container">
-        <h2>📜 About Me</h2>
-        <p>I am an Economics and Data Science student at Augustana College with a strong passion for data visualization, storytelling, and analytics. My academic interests focus on health economics, gender studies, and policy research.</p>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="container">
-        <h2>🚀 Skills</h2>
-        <div class="skills-list">
-            <span>Python</span>
-            <span>Data Analysis</span>
-            <span>Machine Learning</span>
-            <span>Matplotlib & Seaborn</span>
-            <span>Pandas & NumPy</span>
-            <span>SQL</span>
-            <span>Data Visualization</span>
-            <span>Econometrics</span>
-            <span>Feminist Economic Theory</span>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="container">
-        <h2>📊 Projects</h2>
-
-        <div class="project">
-            <img src="images/exchange-rate.jpg" alt="Exchange Rate Data Visualization">
-            <h3>Exchange Rate Data Visualization</h3>
-            <p>A data storytelling project analyzing Euro-USD exchange rates using Python, Pandas, and Matplotlib.</p>
-            <a href="https://github.com/krishasilwal22/exchange-rate-project" target="_blank">🔗 View Project</a>
-        </div>
-
-        <div class="project">
-            <img src="images/hand-tracking.jpg" alt="Hand Tracking & Object Interaction">
-            <h3>Hand Tracking & Object Interaction</h3>
-            <p>A computer vision project using OpenCV & cvzone to move virtual objects with hand gestures.</p>
-            <a href="https://github.com/krishasilwal22/hand-tracking" target="_blank">🔗 View Project</a>
-        </div>
-    </section>
-
-    !-- modify this form HTML and place wherever you want your form -->
-<form
-  action="https://formspree.io/f/xrbenblq"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
-    </section>
+    </header>
 
     <footer>
         <p>© 2025 Krisha Silwal | All rights reserved.</p>
