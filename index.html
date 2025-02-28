@@ -23,7 +23,7 @@
 
     <section id="about" class="container">
         <h2>📜 About Me</h2>
-        <p>I'm an Economics and Data Science student at Augustana College, passionate about data visualization, storytelling, and analytics. My academic and professional interests lie in health economics, gender studies, and policy research.</p>
+        <p>I am an Economics and Data Science student at Augustana College with a strong passion for data visualization, storytelling, and analytics. My academic interests focus on health economics, gender studies, and policy research.</p>
     </section>
 
     <section id="skills" class="container">
@@ -45,14 +45,14 @@
         <h2>📊 Projects</h2>
 
         <div class="project">
-            <img src="exchange-rate.jpg" alt="Exchange Rate Data Visualization">
+            <img src="images/exchange-rate.jpg" alt="Exchange Rate Data Visualization">
             <h3>1️⃣ Exchange Rate Data Visualization</h3>
             <p>A data storytelling project analyzing Euro-USD exchange rates using Python, Pandas, and Matplotlib.</p>
             <a href="https://github.com/krishasilwal22/exchange-rate-project" target="_blank">🔗 View Project</a>
         </div>
 
         <div class="project">
-            <img src="hand-tracking.jpg" alt="Hand Tracking & Object Interaction">
+            <img src="images/hand-tracking.jpg" alt="Hand Tracking & Object Interaction">
             <h3>2️⃣ Hand Tracking & Object Interaction</h3>
             <p>A computer vision project using OpenCV & cvzone to move virtual objects with hand gestures.</p>
             <a href="https://github.com/krishasilwal22/hand-tracking" target="_blank">🔗 View Project</a>
@@ -61,7 +61,7 @@
 
     <section id="contact" class="container">
         <h2>📬 Contact Me</h2>
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <form action="https://formspree.io/f/mknkzddo" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" placeholder="Your Message" required></textarea>
@@ -70,7 +70,46 @@
     </section>
 
     <footer>
-        <p>© 2025 Krisha Silwal</p>
+        <p>© 2025 Krisha Silwal | All rights reserved.</p>
     </footer>
+
+    <script>
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+
+        // Formspree email update
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            formData.set('_replyto', 'krishasilwal22@augustana.edu');
+
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    alert('Your message has been sent!');
+                    form.reset();
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            alert(data['errors'].map(error => error['message']).join(', '));
+                        } else {
+                            alert('Oops! There was a problem submitting your form');
+                        }
+                    });
+                }
+            }).catch(error => {
+                alert('Oops! There was a problem submitting your form');
+            });
+        });
+    </script>
 </body>
 </html>
