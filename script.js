@@ -1,27 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Toggle project details
-    const projectButtons = document.querySelectorAll(".project-title");
+    console.log("JavaScript Loaded Successfully!"); 
 
-    projectButtons.forEach(button => {
+    // Toggle Project Details
+    document.querySelectorAll(".project-title").forEach(button => {
         button.addEventListener("click", function () {
-            const projectDetails = this.nextElementSibling;
-
-            if (projectDetails.style.display === "none" || projectDetails.style.display === "") {
-                projectDetails.style.display = "block";
-            } else {
-                projectDetails.style.display = "none";
-            }
+            let details = this.nextElementSibling;
+            details.style.display = (details.style.display === "block") ? "none" : "block";
         });
     });
 
-    // Smooth scrolling for navbar links
-    const navLinks = document.querySelectorAll(".nav-links a");
-    navLinks.forEach(link => {
+    // Smooth Scrolling for Navbar
+    document.querySelectorAll(".nav-links a").forEach(link => {
         link.addEventListener("click", function (e) {
             e.preventDefault();
-            const targetSection = document.querySelector(this.getAttribute("href"));
-            if (targetSection) {
-                targetSection.scrollIntoView({ behavior: "smooth" });
+            let target = document.querySelector(this.getAttribute("href"));
+            if (target) {
+                target.scrollIntoView({ behavior: "smooth" });
             }
         });
     });
