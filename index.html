@@ -21,106 +21,74 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <h1>Hi, I am <span class="highlight">Krisha Silwal</span></h1>
-        <div class="profile-container">
-            <img src="images/profile.jpg" alt="Krisha Silwal" class="profile-img">
-        </div>
-        <div class="buttons">
-            <a href="https://www.linkedin.com/in/krishasilwal/" target="_blank" class="btn linkedin">Connect on LinkedIn</a>
-            <a href="resume/Krisha_Silwal_Data.pdf" target="_blank" class="btn resume">View/Download Resume</a>
+        <div class="hero-content">
+            <h1>Hello, I am <span class="highlight">Krisha Silwal</span></h1>
+            <div class="profile-container">
+                <img src="images/profile.jpg" alt="Krisha Silwal" class="profile-img">
+            </div>
+            <div class="buttons">
+                <a href="https://www.linkedin.com/in/krishasilwal/" target="_blank" class="btn linkedin">Connect on LinkedIn</a>
+                <a href="resume/Krisha_Silwal_Data.pdf" target="_blank" class="btn resume">View/Download Resume</a>
+            </div>
         </div>
     </section>
 
     <!-- About Me Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>I’m an Economics and Data Science student with a strong interest in using data to analyze policies and economic trends. My work involves statistical analysis, data visualization, and data-driven research to uncover insights that support informed decision-making.</p>
-        <p>This portfolio showcases projects where I have explored economic and social issues through a quantitative lens, applying data analysis and visualization techniques to interpret trends and assess outcomes.</p>
+        <div class="about-container">
+            <p>I’m an Economics and Data Science student with a strong interest in using data to analyze policies and economic trends.</p>
+            <p>My work involves statistical analysis, data visualization, and data-driven research to uncover insights that support informed decision-making.</p>
+            <p>This portfolio showcases projects where I have explored economic and social issues through a quantitative lens, applying data analysis and visualization techniques to interpret trends and assess outcomes.</p>
+        </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
-        
-        <!-- Hand Tracking Project -->
-        <div class="project-card">
-            <h3>Hand Tracking & Object Interaction</h3>
-            <button class="project-title">View Details ⬇</button>
-            <div class="project-details">
-                <h3>Problem Statement</h3>
-                <p>Traditional input devices like a mouse and keyboard are not accessible to everyone...</p>
-
-                <h3>Technologies Used</h3>
-                <ul>
-                    <li>Python – To program the logic.</li>
-                    <li>OpenCV – For hand tracking.</li>
-                    <li>cvzone – For gesture detection.</li>
-                </ul>
-
-                <h3>Watch & Explore</h3>
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/4lBFk8a7XFk" 
-                    frameborder="0" allowfullscreen></iframe>
-
-                <h3>Python Code</h3>
-                <pre><code>
-from cvzone.HandTrackingModule import HandDetector
-import cv2
-
-cap = cv2.VideoCapture(0)
-detector = HandDetector(detectionCon=0.8, maxHands=2)
-
-while True:
-    success, img = cap.read()
-    hands, img = detector.findHands(img)
-    cv2.imshow("Image", img)
-    if cv2.waitKey(1) == ord('q'):
-        break
-
-cap.release()
-cv2.destroyAllWindows()
-                </code></pre>
-
-                <p><a href="https://github.com/YOUR-GITHUB-USERNAME/CSC201-HandTracking" target="_blank" class="btn">View Code on GitHub</a></p>
+        <div class="projects-container">
+            
+            <!-- Hand Tracking Project -->
+            <div class="project-card">
+                <h3>Hand Tracking & Object Interaction</h3>
+                <button class="project-title">View Details ⬇</button>
+                <div class="project-details">
+                    <p>Developed a hand-tracking system using OpenCV and cvzone to allow users to manipulate digital objects using gestures.</p>
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/4lBFk8a7XFk" frameborder="0" allowfullscreen></iframe>
+                </div>
             </div>
-        </div>
 
-        <!-- Gender Pay Gap Project -->
-        <div class="project-card">
-            <h3>Analyzing the Gender Pay Gap Using Regression Modeling</h3>
-            <button class="project-title">View Details ⬇</button>
-            <div class="project-details">
-                <h3>Problem Statement</h3>
-                <p>This project aimed to predict the gender pay gap across 25 U.S. states by analyzing minimum wage, unemployment rate, women’s median earnings, labor force participation, and pay transparency laws.</p>
-
-                <h3>What We Did</h3>
-                <p>Using <b>Excel</b>, we performed <b>multiple linear regression</b> to examine how these economic and policy factors relate to the gender pay gap.</p>
-
-                <h3>Download Project Files</h3>
-                <a href="files/Gender_Pay_Gap_Analysis.xlsx" target="_blank" class="btn">Download Excel File</a>
+            <!-- Gender Pay Gap Project -->
+            <div class="project-card">
+                <h3>Analyzing the Gender Pay Gap</h3>
+                <button class="project-title">View Details ⬇</button>
+                <div class="project-details">
+                    <p>Used Excel to analyze 25 states in the U.S. to examine factors influencing the gender pay gap.</p>
+                    <a href="files/Gender_Pay_Gap_Analysis.xlsx" target="_blank" class="btn">Download Excel File</a>
+                </div>
             </div>
-        </div>
 
-        <!-- Employee Data Machine Learning Project -->
-        <div class="project-card">
-            <h3>Machine Learning Model for Employee Data</h3>
-            <button class="project-title">View Details ⬇</button>
-            <div class="project-details">
-                <h3>Problem Statement</h3>
-                <p>How can we predict employee purchasing behavior based on available company data? This project involved constructing a **simplified machine learning model** using **Excel and Tableau**.</p>
-
-                <h3>What We Did</h3>
-                <ul>
-                    <li>Cleaned and formatted raw employee data.</li>
-                    <li>Identified missing values and used data imputation techniques.</li>
-                    <li>Created a **Confusion Matrix** in **Tableau** to evaluate model accuracy.</li>
-                </ul>
-
-                <h3>Download Project Files</h3>
-                <a href="files/Employee_Data_Model.xlsx" target="_blank" class="btn">Download Excel File</a>
-                <a href="https://public.tableau.com/app/profile/YOUR_TABLEAU_LINK_HERE" target="_blank" class="btn">View Tableau Dashboard</a>
+            <!-- Employee Data Machine Learning Project -->
+            <div class="project-card">
+                <h3>Machine Learning for Employee Data</h3>
+                <button class="project-title">View Details ⬇</button>
+                <div class="project-details">
+                    <p>Developed a predictive model in Tableau using company data to determine employee purchase behaviors.</p>
+                    <a href="https://public.tableau.com/app/profile/YOUR_TABLEAU_LINK_HERE" target="_blank" class="btn">View Tableau Dashboard</a>
+                </div>
             </div>
-        </div>
 
+            <!-- Transgender Legal Recognition Analysis -->
+            <div class="project-card">
+                <h3>Policy Analysis on Transgender Legal Recognition</h3>
+                <button class="project-title">View Details ⬇</button>
+                <div class="project-details">
+                    <p>Analyzed systemic barriers in Nepal’s gender recognition laws using policy and demographic data.</p>
+                    <a href="https://digitalcommons.augustana.edu/cgi/viewcontent.cgi?article=1063&context=wollstonecraftaward" target="_blank" class="btn">Read Published Paper</a>
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <!-- Contact Section -->
