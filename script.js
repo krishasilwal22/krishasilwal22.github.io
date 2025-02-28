@@ -1,29 +1,15 @@
-// Dark Mode Toggle with Local Storage
+// Dark Mode Toggle
 const darkModeToggle = document.getElementById('darkModeToggle');
-const body = document.body;
-
-// Check if dark mode was previously enabled
 if (localStorage.getItem('darkMode') === 'enabled') {
-    body.classList.add('dark-mode');
+    document.body.classList.add('dark-mode');
 }
 
-// Toggle dark mode and save preference
 darkModeToggle.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    if (body.classList.contains('dark-mode')) {
-        localStorage.setItem('darkMode', 'enabled');
-    } else {
-        localStorage.setItem('darkMode', 'disabled');
-    }
+    document.body.classList.toggle('dark-mode');
+    localStorage.setItem('darkMode', document.body.classList.contains('dark-mode') ? 'enabled' : 'disabled');
 });
 
-// Resume Download
-const resumeBtn = document.querySelector('.btn');
-resumeBtn.addEventListener('click', () => {
-    window.location.href = 'assets/resume.pdf'; // Ensure your resume is in an "assets" folder
-});
-
-// Contact Form Handling
+// Form Submission
 const form = document.querySelector('form');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -34,13 +20,7 @@ form.addEventListener('submit', (e) => {
         body: formData,
         headers: { 'Accept': 'application/json' }
     }).then(response => {
-        if (response.ok) {
-            alert('Your message has been sent!');
-            form.reset();
-        } else {
-            alert('Oops! There was a problem submitting your form.');
-        }
-    }).catch(() => {
-        alert('Oops! There was a problem submitting your form.');
+        alert(response.ok ? 'Your message has been sent!' : 'There was an error.');
+        form.reset();
     });
 });
