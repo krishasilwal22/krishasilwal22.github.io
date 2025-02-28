@@ -1,23 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("JavaScript Loaded Successfully!");  // Debugging message
-
-    // Ensure script is loading
-    if (!document.querySelector(".project-title")) {
-        console.error("Project title buttons not found. Check your HTML structure.");
-    }
+    console.log("JavaScript Loaded Successfully!");
 
     // Toggle Project Details (Expand/Collapse)
     document.querySelectorAll(".project-title").forEach(button => {
         button.addEventListener("click", function () {
             let details = this.nextElementSibling;
-
-            if (!details) {
-                console.error("No project details found for", this);
-                return;
+            if (details.style.display === "block") {
+                details.style.display = "none";
+            } else {
+                details.style.display = "block";
             }
-
-            // Toggle visibility
-            details.style.display = (details.style.display === "block") ? "none" : "block";
         });
     });
 
@@ -26,13 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
         link.addEventListener("click", function (e) {
             e.preventDefault();
             let target = document.querySelector(this.getAttribute("href"));
-
-            if (!target) {
-                console.error("Target section not found for link:", this);
-                return;
+            if (target) {
+                target.scrollIntoView({ behavior: "smooth" });
             }
-
-            target.scrollIntoView({ behavior: "smooth" });
         });
     });
 });
