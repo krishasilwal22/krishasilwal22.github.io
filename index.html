@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krisha Silwal | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar">
-        <ul class="nav-links">
+    <nav>
+        <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -18,65 +19,91 @@
         </ul>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <h1 class="hero-text">Hello, I am <span class="highlight">Krisha Silwal</span></h1>
-        <div class="profile-container">
-            <img src="images/profile.jpg" alt="Krisha Silwal" class="profile-img">
-        </div>
+    <!-- Home Section -->
+    <section id="home" class="centered-section">
+        <h1>Hello, I am <span class="highlight">Krisha Silwal</span></h1>
+        <img src="profile.jpg" alt="Krisha Silwal" class="profile-pic">
         <div class="buttons">
             <a href="https://www.linkedin.com/in/krishasilwal/" class="btn">Connect on LinkedIn</a>
-            <a href="Krisha_Silwal_Resume.pdf" download class="btn">View/Download Resume</a>
+            <a href="Krisha_Silwal_Resume.pdf" class="btn" download>View/Download Resume</a>
         </div>
     </section>
 
     <!-- About Me Section -->
     <section id="about">
-        <div class="about-container">
-            <div class="about-left">
-                <img src="images/profile.jpg" alt="Profile Picture" class="about-img">
-            </div>
-            <div class="about-right">
-                <h2>About Me</h2>
-                <p>I’m an Economics and Data Science student with a strong interest in using data to analyze policies and economic trends. My work involves statistical analysis, data visualization, and data-driven research to uncover insights that support informed decision-making.</p>
-                <p>I approach data with a focus on clarity and real-world relevance, ensuring that my analysis is not just technically accurate but also meaningful. I enjoy breaking down complex datasets, identifying patterns and trends, and understanding how data reflects economic and social realities.</p>
-                <p>This portfolio showcases projects where I have explored economic and social issues through a quantitative lens, applying data analysis and visualization techniques to interpret trends and assess outcomes.</p>
-                <div class="about-features">
-                    <div class="feature-box">
-                        <h4>Specializing In</h4>
-                        <p>Economic Research, Data Analytics, Policy Analysis</p>
-                    </div>
-                    <div class="feature-box">
-                        <h4>Equipped With</h4>
-                        <p>Python, R, Tableau, Excel, SQL</p>
-                    </div>
-                    <div class="feature-box">
-                        <h4>Interested In</h4>
-                        <p>Social Inequality, Labor Markets, Public Policy</p>
-                    </div>
-                </div>
-                <a href="#contact" class="btn">Contact Me</a>
-            </div>
-        </div>
+        <h2>About Me</h2>
+        <p>
+            I’m an Economics and Data Science student with a strong interest in using data to analyze policies and economic trends.
+            My work involves statistical analysis, data visualization, and data-driven research to uncover insights that support informed decision-making.
+        </p>
+        <p>
+            I approach data with a focus on clarity and real-world relevance, ensuring that my analysis is not just technically accurate but also meaningful.
+            I enjoy breaking down complex datasets, identifying patterns and trends, and understanding how data reflects economic and social realities.
+        </p>
+        <p>
+            This portfolio showcases projects where I have explored economic and social issues through a quantitative lens,
+            applying data analysis and visualization techniques to interpret trends and assess outcomes.
+        </p>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
-        <div class="projects-container">
-            <div class="project-card">
+        <div class="project-grid">
+            <!-- Project 1 -->
+            <div class="project-card" onclick="toggleProject('project1')">
                 <h3>Hand Tracking & Object Interaction</h3>
                 <p>Developed a real-time hand tracking system using Python & OpenCV.</p>
-                <a href="https://youtube.com/shorts/4lBFk8a7XFk?feature=share" class="btn">Watch Video</a>
+                <span class="expand">Expand ⬇</span>
+                <div id="project1" class="project-details">
+                    <h4>Problem Statement:</h4>
+                    <p>Traditional input devices like a mouse and keyboard are not accessible to everyone. Gesture-based systems offer an alternative, but many require precise hand movements.</p>
+                    <h4>What We Built:</h4>
+                    <p>We developed a real-time hand tracking system that detects hand movements and allows users to move digital blocks on the screen using just their hands.</p>
+                    <h4>Technologies Used:</h4>
+                    <ul>
+                        <li>Python – Logic for hand tracking</li>
+                        <li>OpenCV – Capturing video and detecting hand positions</li>
+                        <li>cvzone – Simplified gesture-based interactions</li>
+                    </ul>
+                    <h4>Outcome & Future Improvements:</h4>
+                    <p>The system successfully allowed object interaction without physical contact. Future improvements could include better tracking precision and more adaptive controls for accessibility.</p>
+                    <a href="https://youtube.com/shorts/4lBFk8a7XFk?feature=share" class="btn">Watch Video</a>
+                </div>
             </div>
-            <div class="project-card">
+
+            <!-- Project 2 -->
+            <div class="project-card" onclick="toggleProject('project2')">
                 <h3>Analyzing the Gender Pay Gap</h3>
                 <p>Used Excel & regression models to explore wage disparities across states.</p>
+                <span class="expand">Expand ⬇</span>
+                <div id="project2" class="project-details">
+                    <h4>Problem Statement:</h4>
+                    <p>What factors contribute to the gender pay gap across different U.S. states?</p>
+                    <h4>What I Did:</h4>
+                    <p>Used regression models to analyze wage gaps based on state policies, minimum wage, and employment rates.</p>
+                    <h4>Technologies Used:</h4>
+                    <ul>
+                        <li>Excel – Data visualization & regression models</li>
+                    </ul>
+                </div>
             </div>
-            <div class="project-card">
+
+            <!-- Project 3 -->
+            <div class="project-card" onclick="toggleProject('project3')">
                 <h3>Machine Learning for Employee Data</h3>
                 <p>Built ML models to predict employee purchases using data cleaning & imputation.</p>
+                <span class="expand">Expand ⬇</span>
+                <div id="project3" class="project-details">
+                    <h4>Technologies Used:</h4>
+                    <ul>
+                        <li>Excel – Data cleaning & visualization</li>
+                        <li>Tableau – Confusion matrix</li>
+                    </ul>
+                </div>
             </div>
+
+            <!-- Project 4 -->
             <div class="project-card">
                 <h3>Transgender Inclusion in Nepal</h3>
                 <p>Research paper analyzing legal barriers to gender identity recognition.</p>
@@ -85,17 +112,17 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Me Section -->
     <section id="contact">
         <h2>Contact Me</h2>
         <form action="https://formspree.io/f/xrbenblq" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+            <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
 
-    <script src="script.js"></script>
 </body>
 </html>
+
