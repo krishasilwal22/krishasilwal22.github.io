@@ -4,121 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krisha Silwal | Portfolio</title>
-    <meta name="description" content="Portfolio of Krisha Silwal, Data Science & Economics Student.">
-    <meta name="keywords" content="Krisha Silwal, Data Science, Economics, Portfolio, Visualization, Analytics">
-
-    <!-- Link to CSS -->
     <link rel="stylesheet" href="styles.css">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome for Icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-    <!-- Link to JavaScript -->
     <script defer src="script.js"></script>
 </head>
 <body>
 
     <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="container">
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
     <!-- Hero Section -->
-    <header id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hi, I am <span class="highlight">Krisha Silwal</span></h1>
-
-            <!-- Profile Picture -->
-            <div class="profile-container">
-                <img src="images/profile.jpg" alt="Krisha Silwal" class="profile-img">
-            </div>
-
-            <!-- LinkedIn & Resume Buttons -->
-            <div class="buttons">
-                <a href="https://www.linkedin.com/in/krishasilwal/" target="_blank" class="btn linkedin">
-                    <i class="fab fa-linkedin"></i> Connect on LinkedIn
-                </a>
-                <a href="assets/KRISHA_SILWAL_DATA.pdf" target="_blank" class="btn resume">
-                    <i class="fas fa-file-alt"></i> View/Download Resume
-                </a>
-            </div>
+    <section id="home" class="hero">
+        <h1>Hi, I am <span class="highlight">Krisha Silwal</span></h1>
+        <div class="profile-container">
+            <img src="images/profile.JPG" alt="Krisha Silwal" class="profile-img">
         </div>
-    </header>
+        <div class="buttons">
+            <a href="https://www.linkedin.com/in/krishasilwal/" target="_blank" class="btn linkedin">Connect on LinkedIn</a>
+            <a href="resume/Krisha_Silwal_Data.pdf" target="_blank" class="btn resume">View/Download Resume</a>
+        </div>
+    </section>
 
-    <!-- About Section -->
+    <!-- About Me Section -->
     <section id="about">
-    <h2>About Me</h2>
-    <p>I’m an Economics and Data Science student with a strong interest in using data to analyze policies and economic trends. My work involves statistical analysis, data visualization, and data-driven research to uncover insights that support informed decision-making.</p>
+        <h2>About Me</h2>
+        <p>I’m an Economics and Data Science student with a strong interest in using data to analyze policies and economic trends. My work involves statistical analysis, data visualization, and data-driven research to uncover insights that support informed decision-making.</p>
+        <p>I approach data with a focus on clarity and real-world relevance, ensuring that my analysis is not just technically accurate but also meaningful. I enjoy breaking down complex datasets, identifying patterns and trends, and understanding how data reflects economic and social realities. I also pay attention to biases and limitations in data to make sure my findings are as objective and useful as possible.</p>
+        <p>This portfolio showcases projects where I have explored economic and social issues through a quantitative lens, applying data analysis and visualization techniques to interpret trends and assess outcomes. By integrating data science with economic and feminist theory, I aim to uncover data-driven evidence of inequities, quantify the impact of policies, and analyze how economic systems affect different social groups.</p>
+    </section>
 
-    <p>I approach data with a focus on clarity and real-world relevance, ensuring that my analysis is not just technically accurate but also meaningful. I enjoy breaking down complex datasets, identifying patterns and trends, and understanding how data reflects economic and social realities. I also pay attention to biases and limitations in data to make sure my findings are as objective and useful as possible.</p>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
 
-    <p>This portfolio showcases projects where I have explored economic and social issues through a quantitative lens, applying data analysis and visualization techniques to interpret trends and assess outcomes. By integrating data science with economic and feminist theory, I aim to uncover data-driven evidence of inequities, quantify the impact of policies, and analyze how economic systems affect different social groups. Using techniques such as regression analysis, data visualization, and predictive modeling, I seek to make structural inequalities more measurable and transparent, providing insights that can support informed policymaking and advocacy efforts.</p>
-</section>
+        <!-- Hand Tracking & Object Interaction -->
+        <div class="project">
+            <button class="project-title">Hand Tracking & Object Interaction ⬇</button>
+            <div class="project-details">
+                <h3>Problem Statement</h3>
+                <p>Traditional input devices like a mouse and keyboard are not accessible to everyone, particularly individuals with limited fine motor control or physical impairments. Gesture-based systems offer an alternative, but many applications still require precise hand movements, making them difficult to use for many people.</p>
 
+                <h3>What We Built & How It Works</h3>
+                <p>We developed a real-time hand tracking system that detects hand movements through a webcam and allows users to interact with blocks on the screen. If a hand moves close to a block, it "grabs" the block, allowing it to be moved. When stacked, the blocks behave as if they are real, staying in place unless moved again.</p>
 
+                <h4>Technologies We Used</h4>
+                <ul>
+                    <li>Python – To program the logic behind object movement.</li>
+                    <li>OpenCV – For capturing video and detecting hand positions.</li>
+                    <li>cvzone – To simplify hand tracking and gesture-based interactions.</li>
+                </ul>
 
-<section id="projects">
-    <h2>Projects</h2>
+                <h3>Watch & Explore</h3>
+                <video width="600" controls>
+                    <source src="videos/hand_tracking_demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
 
-    <!-- Hand Tracking & Object Interaction -->
-    <div class="project">
-        <button class="project-title" onclick="toggleProject('project1')">
-            Hand Tracking & Object Interaction ⬇
-        </button>
-        <div class="project-details" id="project1">
-            <h3>Problem Statement</h3>
-            <p>Traditional input devices like a mouse and keyboard are not accessible to everyone, particularly individuals with limited fine motor control or physical impairments. Gesture-based systems offer an alternative, but many applications still require precise hand movements, making them difficult to use for many people.</p>
-
-            <p>While creating this project, we were interested in exploring how hand tracking technology could allow users to interact with digital objects more intuitively. Our goal was to develop a system where users could move and stack virtual blocks using only their hands, without needing a mouse or keyboard.</p>
-
-            <h3>What We Built & How It Works</h3>
-            <p>We developed a real-time hand tracking system that detects hand movements through a webcam and allows users to interact with blocks on the screen. If a hand moves close to a block, it "grabs" the block, allowing it to be moved. When stacked, the blocks behave as if they are real, staying in place unless moved again.</p>
-
-            <h4>Technologies We Used</h4>
-            <ul>
-                <li>Python – To program the logic behind object movement.</li>
-                <li>OpenCV – For capturing video and detecting hand positions.</li>
-                <li>cvzone – To simplify hand tracking and gesture-based interactions.</li>
-            </ul>
-
-            <h3>Why This Matters & Potential Applications</h3>
-            <ul>
-                <li><strong>Accessibility:</strong> Could be helpful for users who find traditional input devices challenging.</li>
-                <li><strong>Potential Uses:</strong> Could be expanded for gesture-controlled games, AR/VR applications, and assistive technology.</li>
-                <li><strong>Hands-Free Interaction:</strong> Demonstrates how computer vision can create intuitive digital experiences without physical controllers.</li>
-            </ul>
-
-            <h3>What Could Be Improved?</h3>
-            <ul>
-                <li>Improve tracking accuracy using AI-based gesture recognition.</li>
-                <li>Integrate voice control for users with limited hand mobility.</li>
-                <li>Explore alternative inputs like eye tracking or adaptive gestures.</li>
-                <li>Refine stacking logic for a smoother user experience.</li>
-            </ul>
-
-            <h3>Watch & Explore</h3>
-            <video width="600" controls>
-                <source src="videos/hand_tracking_demo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <p><a href="https://github.com/YOUR-GITHUB-USERNAME/CSC201-HandTracking" 
-                target="_blank" class="btn">View Code on GitHub</a></p>
+                <p><a href="https://github.com/YOUR-GITHUB-USERNAME/CSC201-HandTracking" target="_blank" class="btn">View Code on GitHub</a></p>
+            </div>
         </div>
-    </div>
+    </section>
 
-</section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Have a question or want to connect? Feel free to send me a message!</p>
 
+        <form action="https://formspree.io/f/xrbenblq" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
     <footer>
         <p>© 2025 Krisha Silwal | All rights reserved.</p>
@@ -126,3 +90,4 @@
 
 </body>
 </html>
+
