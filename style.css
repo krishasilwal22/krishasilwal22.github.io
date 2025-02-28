@@ -1,4 +1,4 @@
-/* Define CSS Variables for common styles */
+/* Define CSS Variables for Common Styles */
 :root {
     --primary-color: #007BFF;
     --secondary-color: #333;
@@ -10,6 +10,7 @@
     --dark-text: #e0e0e0;
 }
 
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -18,27 +19,30 @@ body {
     color: var(--secondary-color);
 }
 
+/* Container */
 .container {
     width: 80%;
     margin: 0 auto;
+    text-align: center;
 }
 
+/* Header */
 header {
     background: var(--secondary-color);
     color: var(--text-color);
     padding: 20px 0;
-    text-align: center;
 }
 
-header h1, header p {
-    margin: 0;
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+    margin-bottom: 10px;
 }
 
-header p {
-    margin: 10px 0;
-}
-
-header .btn {
+.btn {
     background: var(--primary-color);
     color: var(--text-color);
     padding: 10px 20px;
@@ -47,107 +51,7 @@ header .btn {
     display: inline-block;
 }
 
-header .social-icons {
-    margin: 10px 0;
-}
-
-header .social-icons a {
-    color: var(--text-color);
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-header #darkModeToggle {
-    background: none;
-    border: none;
-    color: var(--text-color);
-    cursor: pointer;
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-section {
-    padding: 40px 0;
-}
-
-section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.skills-list span {
-    background: var(--primary-color);
-    color: var(--text-color);
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius: 5px;
-}
-
-.project {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.project img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 10px;
-}
-
-.project h3, .project p {
-    margin: 10px 0;
-}
-
-.project a {
-    background: var(--primary-color);
-    color: var(--text-color);
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form input, form textarea {
-    width: 80%;
-    max-width: 500px;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    background: var(--primary-color);
-    color: var(--text-color);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-footer {
-    background: var(--secondary-color);
-    color: var(--text-color);
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
+/* Dark Mode */
 .dark-mode {
     background-color: var(--dark-background);
     color: var(--dark-text);
@@ -157,29 +61,8 @@ footer {
     background-color: var(--dark-secondary);
 }
 
-.dark-mode .btn, .dark-mode .project a {
-    background-color: var(--dark-primary);
-}
-
-.dark-mode .skills-list span {
-    background-color: var(--dark-primary);
-}
-
-.dark-mode footer {
-    background-color: var(--dark-secondary);
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
         width: 90%;
     }
-
-    header, footer {
-        padding: 15px 0;
-    }
-
-    section {
-        padding: 30px 0;
-    }
-}
