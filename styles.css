@@ -142,6 +142,14 @@ section {
     padding: 50px 20px;
     text-align: center;
 }
+function toggleProject(id) {
+    var project = document.getElementById(id);
+    if (project.style.display === "block") {
+        project.style.display = "none";
+    } else {
+        project.style.display = "block";
+    }
+}
 
 /* Footer */
 footer {
