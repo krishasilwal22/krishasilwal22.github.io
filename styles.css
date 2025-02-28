@@ -35,10 +35,40 @@ body {
     color: #ff4da6;
 }
 
-/* Sections */
-section {
-    padding: 60px 20px;
+/* Hero Section */
+.hero {
     text-align: center;
+    padding: 50px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Projects Section */
+.projects-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    min-width: 350px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start;
 }
 
 /* Collapsible Projects */
@@ -47,13 +77,12 @@ section {
     color: white;
     cursor: pointer;
     border: none;
-    padding: 12px;
+    padding: 10px;
     width: 100%;
-    text-align: left;
 }
 
 .project-details {
     display: none;
+    padding: 10px;
     background: #f9f9f9;
-    padding: 15px;
 }
