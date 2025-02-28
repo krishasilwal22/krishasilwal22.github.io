@@ -42,31 +42,29 @@
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Hand Tracking & Object Interaction</h3>
+                <button class="project-title">View Details ⬇</button>
+                <div class="project-details">
+                    <h3>Problem Statement</h3>
+                    <p>Traditional input devices like a mouse and keyboard are not accessible to everyone...</p>
 
-        <!-- Hand Tracking & Object Interaction -->
-        <div class="project">
-            <button class="project-title">Hand Tracking & Object Interaction ⬇</button>
-            <div class="project-details">
-                <h3>Problem Statement</h3>
-                <p>Traditional input devices like a mouse and keyboard are not accessible to everyone, particularly individuals with limited fine motor control or physical impairments. Gesture-based systems offer an alternative, but many applications still require precise hand movements, making them difficult to use for many people.</p>
+                    <h3>Technologies Used</h3>
+                    <ul>
+                        <li>Python – To program the logic.</li>
+                        <li>OpenCV – For hand tracking.</li>
+                        <li>cvzone – For gesture detection.</li>
+                    </ul>
 
-                <h3>What We Built & How It Works</h3>
-                <p>We developed a real-time hand tracking system that detects hand movements through a webcam and allows users to interact with blocks on the screen. If a hand moves close to a block, it "grabs" the block, allowing it to be moved. When stacked, the blocks behave as if they are real, staying in place unless moved again.</p>
+                    <h3>Watch & Explore</h3>
+                    <video width="100%" controls>
+                        <source src="videos/hand_tracking_demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
 
-                <h4>Technologies We Used</h4>
-                <ul>
-                    <li>Python – To program the logic behind object movement.</li>
-                    <li>OpenCV – For capturing video and detecting hand positions.</li>
-                    <li>cvzone – To simplify hand tracking and gesture-based interactions.</li>
-                </ul>
-
-                <h3>Watch & Explore</h3>
-                <video width="600" controls>
-                    <source src="videos/hand_tracking_demo.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-
-                <p><a href="https://github.com/YOUR-GITHUB-USERNAME/CSC201-HandTracking" target="_blank" class="btn">View Code on GitHub</a></p>
+                    <p><a href="https://github.com/YOUR-GITHUB-USERNAME/CSC201-HandTracking" target="_blank" class="btn">View Code on GitHub</a></p>
+                </div>
             </div>
         </div>
     </section>
@@ -74,7 +72,7 @@
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Have a question or want to connect? Feel free to send me a message!</p>
+        <p>Have a question? Send me a message!</p>
 
         <form action="https://formspree.io/f/xrbenblq" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
@@ -90,4 +88,3 @@
 
 </body>
 </html>
-
