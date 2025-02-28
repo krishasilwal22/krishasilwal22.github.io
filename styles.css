@@ -1,4 +1,4 @@
-* Google Font */
+/* Google Font */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -50,8 +50,9 @@ body {
     background: url('images/data-background.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 100px 10%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 /* Highlighted Name */
@@ -63,32 +64,48 @@ body {
 .profile-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 20px;
 }
 
 .profile-img {
-    width: 250px;
-    height: 250px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid #ff4da6;
 }
 
-/* LinkedIn Button */
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 12px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 .btn.linkedin {
     background-color: #0077b5;
     color: white;
-    padding: 12px 20px;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    text-decoration: none;
 }
 
-.btn.linkedin:hover {
-    background-color: #005582;
+.btn.resume {
+    background-color: #ff4da6;
+    color: white;
+}
+
+.btn:hover {
+    transform: scale(1.1);
 }
 
 /* Contact Form */
@@ -118,4 +135,18 @@ form button {
 
 form button:hover {
     background: #e60073;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
