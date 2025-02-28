@@ -18,15 +18,12 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    
-<div class="profile-container">
-    <img src="images/profile.jpg" alt="Krisha Silwal" class="profile-img">
-</div>
+
     <!-- Hero Section -->
     <section id="home" class="hero">
         <h1>Hi, I am <span class="highlight">Krisha Silwal</span></h1>
         <div class="profile-container">
-            <img src="images/profile.JPG" alt="Krisha Silwal" class="profile-img">
+            <img src="images/profile.jpg" alt="Krisha Silwal" class="profile-img">
         </div>
         <div class="buttons">
             <a href="https://www.linkedin.com/in/krishasilwal/" target="_blank" class="btn linkedin">Connect on LinkedIn</a>
@@ -61,10 +58,30 @@
                     </ul>
 
                     <h3>Watch & Explore</h3>
-                    <video width="100%" controls>
-                        <source src="videos/hand_tracking_demo.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/4lBFk8a7XFk" 
+                        frameborder="0" allowfullscreen>
+                    </iframe>
+
+                    <h3>Python Code</h3>
+                    <pre>
+<code>
+from cvzone.HandTrackingModule import HandDetector
+import cv2
+
+cap = cv2.VideoCapture(0)
+detector = HandDetector(detectionCon=0.8, maxHands=2)
+
+while True:
+    success, img = cap.read()
+    hands, img = detector.findHands(img)
+    cv2.imshow("Image", img)
+    if cv2.waitKey(1) == ord('q'):
+        break
+
+cap.release()
+cv2.destroyAllWindows()
+</code>
+                    </pre>
 
                     <p><a href="https://github.com/YOUR-GITHUB-USERNAME/CSC201-HandTracking" target="_blank" class="btn">View Code on GitHub</a></p>
                 </div>
@@ -91,3 +108,4 @@
 
 </body>
 </html>
+
