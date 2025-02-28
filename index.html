@@ -28,7 +28,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="assets/resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="assets/resume.pdf" download>Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -43,7 +43,7 @@
 
                 <!-- LinkedIn Button -->
                 <div class="buttons">
-                    <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME" target="_blank" class="btn linkedin">
+                    <a href="https://www.linkedin.com/in/krishasilwal/" target="_blank" class="btn linkedin">
                         <i class="fab fa-linkedin"></i> Connect on LinkedIn
                     </a>
                 </div>
@@ -51,7 +51,7 @@
 
             <!-- Right Side: Profile Picture -->
             <div class="profile-container">
-                <img src="images/profile.JPG" alt="Krisha Silwal" class="profile-img">
+                <img src="images/profile.jpg" alt="Krisha Silwal" class="profile-img">
             </div>
         </div>
     </header>
@@ -70,8 +70,13 @@
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Provide your contact information.</p>
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/xrbenblq" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
     <footer>
