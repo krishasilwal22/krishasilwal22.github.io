@@ -11,15 +11,11 @@ nav ul {
     padding: 15px;
 }
 
-nav ul li {
-    list-style: none;
-    margin: 0 15px;
-}
-
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+.about-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: left;
 }
 
 .project-grid {
