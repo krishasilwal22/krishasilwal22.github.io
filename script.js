@@ -8,11 +8,14 @@ document.querySelectorAll('.nav-links a').forEach(link => {
         }
         function toggleProject(id) {
     var project = document.getElementById(id);
-    if (project.style.display === "block") {
+    
+    // Check current display state
+    if (project.style.display === "block" || project.style.display === "") {
         project.style.display = "none";
     } else {
         project.style.display = "block";
     }
 }
+
     });
 });
