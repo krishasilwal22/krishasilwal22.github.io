@@ -1,4 +1,4 @@
-/* Google Font */
+* Google Font */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -47,24 +47,23 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url('images/economics-pattern.jpg') no-repeat center center/cover;
+    background: url('images/data-background.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: left;
-    padding-top: 80px; /* Prevents overlap with navbar */
+    justify-content: space-between;
+    padding: 100px 10%;
 }
 
 /* Highlighted Name */
 .highlight {
-    color: #ff4da6; /* Pink Color */
+    color: #ff4da6; /* Pink */
 }
 
-/* Profile Picture Styling */
+/* Profile Picture */
 .profile-container {
-    width: 40%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .profile-img {
@@ -86,16 +85,10 @@ body {
     font-size: 1rem;
     transition: all 0.3s ease;
     text-decoration: none;
-    width: fit-content;
-}
-
-.btn.linkedin i {
-    margin-right: 8px;
 }
 
 .btn.linkedin:hover {
     background-color: #005582;
-    transform: scale(1.1);
 }
 
 /* Contact Form */
@@ -125,23 +118,4 @@ form button {
 
 form button:hover {
     background: #e60073;
-}
-
-/* Sections */
-section {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-/* Footer */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
 }
