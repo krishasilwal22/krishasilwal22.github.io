@@ -142,14 +142,34 @@ section {
     padding: 50px 20px;
     text-align: center;
 }
-function toggleProject(id) {
-    var project = document.getElementById(id);
-    if (project.style.display === "block") {
-        project.style.display = "none";
-    } else {
-        project.style.display = "block";
-    }
+.project {
+    margin-bottom: 20px;
 }
+
+.project-title {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #ff4da6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.project-title:hover {
+    background-color: #e60073;
+}
+
+.project-details {
+    display: none;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #ff4da6;
+    margin-top: 5px;
+}
+
 
 /* Footer */
 footer {
