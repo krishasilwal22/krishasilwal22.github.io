@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krisha Silwal | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
 
@@ -21,25 +20,43 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hello, I am <span class="highlight">Krisha Silwal</span></h1>
-            <div class="profile-container">
-                <img src="images/profile.jpg" alt="Krisha Silwal" class="profile-img">
-            </div>
-            <div class="buttons">
-                <a href="https://www.linkedin.com/in/krishasilwal/" target="_blank" class="btn linkedin">Connect on LinkedIn</a>
-                <a href="resume/Krisha_Silwal_Data.pdf" target="_blank" class="btn resume">View/Download Resume</a>
-            </div>
+        <h1 class="hero-text">Hello, I am <span class="highlight">Krisha Silwal</span></h1>
+        <div class="profile-container">
+            <img src="images/profile.jpg" alt="Krisha Silwal" class="profile-img">
+        </div>
+        <div class="buttons">
+            <a href="https://www.linkedin.com/in/krishasilwal/" class="btn">Connect on LinkedIn</a>
+            <a href="Krisha_Silwal_Resume.pdf" download class="btn">View/Download Resume</a>
         </div>
     </section>
 
     <!-- About Me Section -->
     <section id="about">
-        <h2>About Me</h2>
         <div class="about-container">
-            <p>I’m an Economics and Data Science student with a strong interest in using data to analyze policies and economic trends.</p>
-            <p>My work involves statistical analysis, data visualization, and data-driven research to uncover insights that support informed decision-making.</p>
-            <p>This portfolio showcases projects where I have explored economic and social issues through a quantitative lens, applying data analysis and visualization techniques to interpret trends and assess outcomes.</p>
+            <div class="about-left">
+                <img src="images/profile.jpg" alt="Profile Picture" class="about-img">
+            </div>
+            <div class="about-right">
+                <h2>About Me</h2>
+                <p>I’m an Economics and Data Science student with a strong interest in using data to analyze policies and economic trends. My work involves statistical analysis, data visualization, and data-driven research to uncover insights that support informed decision-making.</p>
+                <p>I approach data with a focus on clarity and real-world relevance, ensuring that my analysis is not just technically accurate but also meaningful. I enjoy breaking down complex datasets, identifying patterns and trends, and understanding how data reflects economic and social realities.</p>
+                <p>This portfolio showcases projects where I have explored economic and social issues through a quantitative lens, applying data analysis and visualization techniques to interpret trends and assess outcomes.</p>
+                <div class="about-features">
+                    <div class="feature-box">
+                        <h4>Specializing In</h4>
+                        <p>Economic Research, Data Analytics, Policy Analysis</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Equipped With</h4>
+                        <p>Python, R, Tableau, Excel, SQL</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Interested In</h4>
+                        <p>Social Inequality, Labor Markets, Public Policy</p>
+                    </div>
+                </div>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
         </div>
     </section>
 
@@ -47,47 +64,24 @@
     <section id="projects">
         <h2>Projects</h2>
         <div class="projects-container">
-            
-            <!-- Hand Tracking Project -->
             <div class="project-card">
                 <h3>Hand Tracking & Object Interaction</h3>
-                <button class="project-title">View Details ⬇</button>
-                <div class="project-details">
-                    <p>Developed a hand-tracking system using OpenCV and cvzone to allow users to manipulate digital objects using gestures.</p>
-                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/4lBFk8a7XFk" frameborder="0" allowfullscreen></iframe>
-                </div>
+                <p>Developed a real-time hand tracking system using Python & OpenCV.</p>
+                <a href="https://youtube.com/shorts/4lBFk8a7XFk?feature=share" class="btn">Watch Video</a>
             </div>
-
-            <!-- Gender Pay Gap Project -->
             <div class="project-card">
                 <h3>Analyzing the Gender Pay Gap</h3>
-                <button class="project-title">View Details ⬇</button>
-                <div class="project-details">
-                    <p>Used Excel to analyze 25 states in the U.S. to examine factors influencing the gender pay gap.</p>
-                    <a href="files/Gender_Pay_Gap_Analysis.xlsx" target="_blank" class="btn">Download Excel File</a>
-                </div>
+                <p>Used Excel & regression models to explore wage disparities across states.</p>
             </div>
-
-            <!-- Employee Data Machine Learning Project -->
             <div class="project-card">
                 <h3>Machine Learning for Employee Data</h3>
-                <button class="project-title">View Details ⬇</button>
-                <div class="project-details">
-                    <p>Developed a predictive model in Tableau using company data to determine employee purchase behaviors.</p>
-                    <a href="https://public.tableau.com/app/profile/YOUR_TABLEAU_LINK_HERE" target="_blank" class="btn">View Tableau Dashboard</a>
-                </div>
+                <p>Built ML models to predict employee purchases using data cleaning & imputation.</p>
             </div>
-
-            <!-- Transgender Legal Recognition Analysis -->
             <div class="project-card">
-                <h3>Policy Analysis on Transgender Legal Recognition</h3>
-                <button class="project-title">View Details ⬇</button>
-                <div class="project-details">
-                    <p>Analyzed systemic barriers in Nepal’s gender recognition laws using policy and demographic data.</p>
-                    <a href="https://digitalcommons.augustana.edu/cgi/viewcontent.cgi?article=1063&context=wollstonecraftaward" target="_blank" class="btn">Read Published Paper</a>
-                </div>
+                <h3>Transgender Inclusion in Nepal</h3>
+                <p>Research paper analyzing legal barriers to gender identity recognition.</p>
+                <a href="https://digitalcommons.augustana.edu/cgi/viewcontent.cgi?article=1063&context=wollstonecraftaward" class="btn">Read Paper</a>
             </div>
-
         </div>
     </section>
 
@@ -97,14 +91,11 @@
         <form action="https://formspree.io/f/xrbenblq" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
 
-    <footer>
-        <p>© 2025 Krisha Silwal | All rights reserved.</p>
-    </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
