@@ -23,7 +23,7 @@ resumeBtn.addEventListener('click', () => {
     window.location.href = 'assets/resume.pdf'; // Ensure your resume is in an "assets" folder
 });
 
-// Formspree Email Update
+// Contact Form Handling
 const form = document.querySelector('form');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -32,9 +32,7 @@ form.addEventListener('submit', (e) => {
     fetch(form.action, {
         method: 'POST',
         body: formData,
-        headers: {
-            'Accept': 'application/json'
-        }
+        headers: { 'Accept': 'application/json' }
     }).then(response => {
         if (response.ok) {
             alert('Your message has been sent!');
