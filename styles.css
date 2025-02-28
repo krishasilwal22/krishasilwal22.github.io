@@ -20,6 +20,7 @@ body {
     justify-content: center;
 }
 
+/* Dark overlay for better text readability */
 .overlay {
     position: absolute;
     top: 0;
@@ -29,9 +30,20 @@ body {
     background: rgba(0, 0, 0, 0.6);
 }
 
+/* Ensure text stays on top of the background */
 .hero .container {
     position: relative;
     z-index: 2;
+}
+/* Profile Picture Styling */
+.profile-img {
+    display: block; /* Centers the image */
+    width: 150px;  /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    border-radius: 50%; /* Makes it a perfect circle */
+    object-fit: cover; /* Ensures it fills the space without stretching */
+    margin: 20px auto; /* Centers the image */
+    border: 3px solid white; /* Adds a clean border */
 }
 
 h1 {
