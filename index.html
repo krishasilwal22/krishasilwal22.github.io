@@ -22,12 +22,10 @@
     <!-- Home Section -->
     <section id="home" class="centered-section">
         <h1>Hello, I am <span class="highlight">Krisha Silwal</span></h1>
-        <div class="profile-container">
-            <img src="images/profile.jpg" alt="Krisha Silwal" class="profile-img">
-        </div>
+        <img src="assets/profile.jpg" alt="Krisha Silwal" class="profile-pic">
         <div class="buttons">
             <a href="https://www.linkedin.com/in/krishasilwal/" class="btn">Connect on LinkedIn</a>
-           <a href="assets/Krisha_Silwal_Data.pdf" target="_blank" class="btn resume">View/Download Resume</a>
+            <a href="assets/KRISHA_SILWAL_DATA.pdf" class="btn" download>View/Download Resume</a>
         </div>
     </section>
 
@@ -36,17 +34,17 @@
         <h2>About Me</h2>
         <div class="about-container">
             <p>
-                I’m an Economics and Data Science student with a strong interest in using data to analyze policies, economic trends, and social structures.  
+                I’m an Economics and Data Science student with a strong interest in using data to analyze policies, economic trends, and social structures. 
                 My work involves statistical analysis, data visualization, and data-driven research to uncover insights that support informed decision-making.
             </p>
             <p>
-                I approach data with a focus on clarity and real-world relevance, ensuring that my analysis is not just technically accurate but also meaningful.  
-                I enjoy breaking down complex datasets, identifying patterns and trends, and understanding how data reflects economic and social realities.
+                I approach data with a focus on clarity and real-world relevance, ensuring that my analysis is not just technically accurate but also meaningful. 
+                I enjoy breaking down complex datasets, identifying patterns and trends, and understanding how data reflects different aspects of decision-making and problem-solving.
             </p>
             <p>
-                This portfolio showcases projects where I have explored economic and social issues through a quantitative lens,  
-                applying data analysis and visualization techniques to interpret trends and assess outcomes.  
-                These projects are helping me develop the analytical and computational skills needed to advance my interest in policy research, economic justice, and gender-based economic disparities.
+                This portfolio showcases projects where I have applied data analysis to explore fundamental concepts in programming, machine learning, and statistical modeling. 
+                Through these projects, I have gained experience in working with real-world datasets, refining my technical skills, and developing a structured approach to problem-solving. 
+                These experiences are helping me build a strong foundation in data analysis, which I aim to apply to research on economic inequality, labor markets, and gender-based economic disparities in the future.
             </p>
         </div>
     </section>
@@ -55,7 +53,7 @@
     <section id="projects">
         <h2>Projects</h2>
         <div class="project-grid">
-            
+
             <!-- Project 1 -->
             <div class="project-card" onclick="toggleProject('project1')">
                 <h3>Hand Tracking & Object Interaction</h3>
@@ -63,22 +61,17 @@
                 <span class="expand">Expand ⬇</span>
                 <div id="project1" class="project-details">
                     <h4>Problem Statement:</h4>
-                    <p>Traditional input devices like a mouse and keyboard are not accessible to everyone. Gesture-based systems offer an alternative,  
-                        but many require precise hand movements, limiting accessibility.</p>
+                    <p>For people with limited motor control, using a mouse or keyboard can be challenging. We wanted to explore an alternative way to interact with technology that didn’t rely on traditional input devices.</p>
                     <h4>What We Built:</h4>
-                    <p>We developed a real-time hand tracking system that detects hand movements and allows users to move digital blocks on the screen using just their hands.</p>
+                    <p>We developed a real-time hand tracking system that allows users to move blocks on a screen using only their hands. A webcam detects hand positions and gestures, enabling users to grab, move, and stack virtual objects.</p>
                     <h4>Technologies Used:</h4>
                     <ul>
-                        <li>Python – Logic for hand tracking</li>
-                        <li>OpenCV – Capturing video and detecting hand positions</li>
+                        <li>Python – Program logic for hand tracking</li>
+                        <li>OpenCV – Capturing video and detecting hand movements</li>
                         <li>cvzone – Simplified gesture-based interactions</li>
                     </ul>
-                    <h4>Impact & Shortcomings:</h4>
-                    <p>This system provided an accessible way to interact with digital objects without physical input devices, demonstrating how AI can improve accessibility.  
-                        However, it still required some level of precision, which may be difficult for individuals with severe motor impairments.</p>
-                    <h4>Future Improvements:</h4>
-                    <p>Increase tracking precision, add customizable sensitivity levels, and expand the range of interactions beyond block movement.</p>
-                    <a href="https://youtube.com/shorts/4lBFk8a7XFk?feature=share" class="btn">Watch Video</a>
+                    <h4>Impact & Future Improvements:</h4>
+                    <p>The system provided a touch-free way to interact with digital objects. However, it worked best in well-lit environments and required steady hand movements. Future improvements could include better tracking in low-light conditions and adaptive settings for users with different mobility needs.</p>
                 </div>
             </div>
 
@@ -89,17 +82,11 @@
                 <span class="expand">Expand ⬇</span>
                 <div id="project2" class="project-details">
                     <h4>Problem Statement:</h4>
-                    <p>The gender pay gap persists across U.S. states, influenced by factors like minimum wage policies, labor force participation,  
-                        and unemployment rates.</p>
+                    <p>Even though the gender pay gap is widely discussed, the specific factors driving wage differences across states aren’t always clear. This project analyzed how economic policies and labor conditions impact wage disparities.</p>
                     <h4>Technologies Used:</h4>
                     <ul>
-                        <li>Excel – Data visualization & regression models</li>
+                        <li>Excel – Data collection, regression modeling, and data visualization</li>
                     </ul>
-                    <h4>Findings & Shortcomings:</h4>
-                    <p>The regression analysis showed correlations between minimum wage and gender pay disparities,  
-                        but data limitations prevented accounting for industry-specific differences.</p>
-                    <h4>Future Improvements:</h4>
-                    <p>Use more granular datasets with industry segmentation and integrate additional economic indicators for better predictive power.</p>
                 </div>
             </div>
 
@@ -109,19 +96,11 @@
                 <p>Built ML models to predict employee purchases using data cleaning & imputation.</p>
                 <span class="expand">Expand ⬇</span>
                 <div id="project3" class="project-details">
-                    <h4>Problem Statement:</h4>
-                    <p>Businesses often struggle with incomplete employee data, making it difficult to predict purchasing behavior and financial decisions.</p>
-                    <h4>What We Did:</h4>
-                    <p>We cleaned and formatted raw company data, handled missing values through imputation, and created machine learning models to predict  
-                        employee purchase behavior based on job role, salary, and work location.</p>
                     <h4>Technologies Used:</h4>
                     <ul>
-                        <li>Excel – Data cleaning & visualization</li>
-                        <li>Tableau – Confusion matrix</li>
+                        <li>Excel – Data cleaning, imputation, and early exploratory analysis</li>
+                        <li>Tableau – Data visualization and confusion matrix evaluation</li>
                     </ul>
-                    <h4>Impact & Future Improvements:</h4>
-                    <p>The model showed promising accuracy but lacked real-time adaptability. Future enhancements could involve deeper feature engineering  
-                        and integration with live company data.</p>
                 </div>
             </div>
 
@@ -129,9 +108,6 @@
             <div class="project-card">
                 <h3>Transgender Inclusion in Nepal</h3>
                 <p>Research paper analyzing legal barriers to gender identity recognition.</p>
-                <h4>Summary:</h4>
-                <p>This research analyzed Nepal's gender identity recognition laws and their impact on transgender individuals.  
-                    It explored systemic barriers, caste-based inequalities, and the intersection of gender and legal documentation.</p>
                 <a href="https://digitalcommons.augustana.edu/cgi/viewcontent.cgi?article=1063&context=wollstonecraftaward" class="btn">Read Paper</a>
             </div>
         </div>
