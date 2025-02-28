@@ -1,46 +1,93 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f9f9f9;
+    background-color: #121212;
+    color: white;
     text-align: center;
+    margin: 0;
 }
 
-.hero-content {
-    text-align: center;
+/* Navigation */
+.navbar {
+    background: #1a1a1a;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff4da6;
+}
+
+/* Hero Section */
+.hero {
     margin-top: 80px;
 }
 
-.profile-container {
+.hero-text {
+    font-size: 26px;
+    color: white;
+}
+
+/* About Me Section */
+.about-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 50px 20px;
+    align-items: center;
+}
+
+.about-img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.about-features {
+    display: flex;
+    justify-content: space-between;
     margin-top: 20px;
 }
 
-.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #ff4da6;
+.feature-box {
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
 }
 
-.about-container {
-    display: flex;
-    justify-content: center;
-    text-align: justify;
-    max-width: 800px;
-    margin: auto;
-}
-
+/* Projects */
 .projects-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    overflow-x: auto;
     gap: 20px;
+    padding: 20px;
+    justify-content: center;
 }
 
 .project-card {
     width: 300px;
     padding: 15px;
-    background: white;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    background: #222;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
 }
