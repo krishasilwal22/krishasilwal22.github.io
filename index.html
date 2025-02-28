@@ -6,32 +6,31 @@
     <title>Krisha Silwal | Portfolio</title>
     <meta name="description" content="Portfolio of Krisha Silwal, Data Science & Economics Student.">
     <meta name="keywords" content="Krisha Silwal, Data Science, Economics, Portfolio, Visualization, Analytics">
-    
+
     <!-- Link to CSS -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <!-- Link to JavaScript -->
     <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <!-- Profile Picture -->
-            <img src="images/profile.JPG" alt="Krisha Silwal" class="profile-img">
 
+    <!-- Hero Section with Background Image -->
+    <header class="hero">
+        <div class="overlay"></div> <!-- Background Overlay -->
+        <div class="container">
+            <h2>Hello, I'm</h2>
             <h1>Krisha Silwal</h1>
             <p>Data Science & Economics Student | Passionate About Visualization & Analytics</p>
 
-            <!-- Resume Download Button -->
-            <a href="assets/resume.pdf" class="btn" download>📄 Download Resume</a>
-
-            <div class="social-icons">
-                <a href="https://github.com/krishasilwal22" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <!-- Buttons -->
+            <div class="buttons">
+                <a href="assets/resume.pdf" class="btn outline" download>📄 My Resume</a>
+                <a href="#about" class="btn solid">Get to Know Me</a>
             </div>
-
-            <!-- Dark Mode Toggle Button -->
-            <button id="darkModeToggle" aria-label="Toggle Dark Mode">🌙 Toggle Dark Mode</button>
         </div>
     </header>
 
@@ -63,16 +62,16 @@
 
         <div class="project">
             <img src="images/exchange-rate.jpg" alt="Exchange Rate Data Visualization">
-            <h3>1️⃣ Exchange Rate Data Visualization</h3>
+            <h3>Exchange Rate Data Visualization</h3>
             <p>A data storytelling project analyzing Euro-USD exchange rates using Python, Pandas, and Matplotlib.</p>
-            <a href="https://github.com/krishasilwal22/exchange-rate-project" target="_blank" rel="noopener noreferrer">🔗 View Project</a>
+            <a href="https://github.com/krishasilwal22/exchange-rate-project" target="_blank">🔗 View Project</a>
         </div>
 
         <div class="project">
             <img src="images/hand-tracking.jpg" alt="Hand Tracking & Object Interaction">
-            <h3>2️⃣ Hand Tracking & Object Interaction</h3>
+            <h3>Hand Tracking & Object Interaction</h3>
             <p>A computer vision project using OpenCV & cvzone to move virtual objects with hand gestures.</p>
-            <a href="https://github.com/krishasilwal22/hand-tracking" target="_blank" rel="noopener noreferrer">🔗 View Project</a>
+            <a href="https://github.com/krishasilwal22/hand-tracking" target="_blank">🔗 View Project</a>
         </div>
     </section>
 
@@ -90,5 +89,6 @@
     <footer>
         <p>© 2025 Krisha Silwal | All rights reserved.</p>
     </footer>
+
 </body>
 </html>
