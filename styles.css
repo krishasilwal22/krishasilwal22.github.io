@@ -7,16 +7,52 @@ body {
     color: #333;
 }
 
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    padding: 15px 0;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #6c63ff;
+}
+
 /* Hero Section */
 .hero {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url('images/background.jpg') no-repeat center center/cover;
+    background: url('images/economics-pattern.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: left;
+    padding-top: 80px; /* To avoid overlap with navbar */
 }
 
 /* Container */
@@ -37,62 +73,37 @@ h1 {
     font-weight: 600;
 }
 
-h2 {
-    font-size: 1.5rem;
-    font-weight: 300;
-}
-
-p {
-    font-size: 1.2rem;
-}
-
 .highlight {
     color: #ff7300;
 }
 
-/* Buttons */
-.buttons {
-    margin-top: 20px;
-}
-
+/* LinkedIn Button */
 .btn {
-    padding: 10px 20px;
+    padding: 12px 20px;
     border-radius: 5px;
     font-size: 1rem;
     text-decoration: none;
     display: inline-block;
-    margin: 10px;
+    margin-top: 20px;
     transition: all 0.3s ease;
 }
 
-.btn.solid {
-    background-color: #6c63ff;
+.btn.linkedin {
+    background-color: #0077b5;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    border-radius: 50px;
 }
 
-.btn.outline {
-    border: 2px solid #333;
-    color: #333;
+.btn.linkedin i {
+    margin-right: 8px;
 }
 
 .btn:hover {
     transform: scale(1.1);
-}
-
-/* Social Icons */
-.social-icons {
-    margin-top: 20px;
-}
-
-.social-icons a {
-    color: #333;
-    font-size: 1.5rem;
-    margin: 0 10px;
-    transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-    color: #6c63ff;
 }
 
 /* Right Side: Profile Picture */
