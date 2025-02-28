@@ -52,61 +52,10 @@ body {
     align-items: center;
     justify-content: center;
     text-align: left;
-    padding-top: 80px; /* To avoid overlap with navbar */
+    padding-top: 80px; /* Prevents overlap with navbar */
 }
 
-/* Container */
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
-}
-
-/* Left Side: Text */
-.text-content {
-    max-width: 50%;
-}
-
-h1 {
-    font-size: 3rem;
-    font-weight: 600;
-}
-
-.highlight {
-    color: #ff7300;
-}
-
-/* LinkedIn Button */
-.btn {
-    padding: 12px 20px;
-    border-radius: 5px;
-    font-size: 1rem;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 20px;
-    transition: all 0.3s ease;
-}
-
-.btn.linkedin {
-    background-color: #0077b5;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: fit-content;
-    border-radius: 50px;
-}
-
-.btn.linkedin i {
-    margin-right: 8px;
-}
-
-.btn:hover {
-    transform: scale(1.1);
-}
-
-/* Right Side: Profile Picture */
+/* Profile Picture Styling */
 .profile-container {
     width: 40%;
     display: flex;
@@ -119,6 +68,40 @@ h1 {
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid #ff7300;
+}
+
+/* LinkedIn Button */
+.btn.linkedin {
+    background-color: #0077b5;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.btn.linkedin i {
+    margin-right: 8px;
+}
+
+.btn.linkedin:hover {
+    background-color: #005582;
+    transform: scale(1.1);
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
 /* Footer */
