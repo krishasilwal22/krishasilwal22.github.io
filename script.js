@@ -23,4 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+
+    // Debugging to check if script is working
+    if (!document.querySelector(".project-card")) {
+        console.error("Project cards not found. Check your HTML structure.");
+    }
 });
