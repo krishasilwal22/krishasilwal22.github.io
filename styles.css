@@ -55,6 +55,11 @@ body {
     padding-top: 80px; /* Prevents overlap with navbar */
 }
 
+/* Highlighted Name */
+.highlight {
+    color: #ff4da6; /* Pink Color */
+}
+
 /* Profile Picture Styling */
 .profile-container {
     width: 40%;
@@ -67,7 +72,7 @@ body {
     height: 250px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid #ff7300;
+    border: 5px solid #ff4da6;
 }
 
 /* LinkedIn Button */
@@ -91,6 +96,35 @@ body {
 .btn.linkedin:hover {
     background-color: #005582;
     transform: scale(1.1);
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #ff4da6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #e60073;
 }
 
 /* Sections */
