@@ -1,26 +1,34 @@
-// Dark Mode Toggle
-const darkModeToggle = document.getElementById('darkModeToggle');
-if (localStorage.getItem('darkMode') === 'enabled') {
-    document.body.classList.add('dark-mode');
+// Typing Animation for "I Am Into ..."
+const textElement = document.querySelector(".typed-text");
+const words = ["Data Science", "Analytics", "Machine Learning", "Economics"];
+let wordIndex = 0;
+let letterIndex = 0;
+let isDeleting = false;
+
+function typeEffect() {
+    const currentWord = words[wordIndex];
+    if (isDeleting) {
+        textElement.textContent = currentWord.substring(0, letterIndex - 1);
+        letterIndex--;
+    } else {
+        textElement.textContent = currentWord.substring(0, letterIndex + 1);
+        letterIndex++;
+    }
+
+    let typingSpeed = isDeleting ? 100 : 200;
+    if (!isDeleting && letterIndex === currentWord.length) {
+        isDeleting = true;
+        typingSpeed = 1000;
+    } else if (isDeleting && letterIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        typingSpeed = 500;
+    }
+
+    setTimeout(typeEffect, typingSpeed);
 }
 
-darkModeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    localStorage.setItem('darkMode', document.body.classList.contains('dark-mode') ? 'enabled' : 'disabled');
-});
-
-// Form Submission
-const form = document.querySelector('form');
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const formData = new FormData(form);
-
-    fetch(form.action, {
-        method: 'POST',
-        body: formData,
-        headers: { 'Accept': 'application/json' }
-    }).then(response => {
-        alert(response.ok ? 'Your message has been sent!' : 'There was an error.');
-        form.reset();
-    });
+// Start Typing Effect
+document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(typeEffect, 500);
 });
