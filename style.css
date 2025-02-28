@@ -1,9 +1,21 @@
+/* Define CSS Variables for common styles */
+:root {
+    --primary-color: #007BFF;
+    --secondary-color: #333;
+    --text-color: #fff;
+    --background-color: #f4f4f4;
+    --dark-background: #121212;
+    --dark-secondary: #1c1c1c;
+    --dark-primary: #1e88e5;
+    --dark-text: #e0e0e0;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
 }
 
 .container {
@@ -12,13 +24,13 @@ body {
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: var(--secondary-color);
+    color: var(--text-color);
     padding: 20px 0;
     text-align: center;
 }
 
-header h1 {
+header h1, header p {
     margin: 0;
 }
 
@@ -27,8 +39,8 @@ header p {
 }
 
 header .btn {
-    background: #007BFF;
-    color: #fff;
+    background: var(--primary-color);
+    color: var(--text-color);
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -40,7 +52,7 @@ header .social-icons {
 }
 
 header .social-icons a {
-    color: #fff;
+    color: var(--text-color);
     margin: 0 10px;
     text-decoration: none;
 }
@@ -48,7 +60,7 @@ header .social-icons a {
 header #darkModeToggle {
     background: none;
     border: none;
-    color: #fff;
+    color: var(--text-color);
     cursor: pointer;
     font-size: 1.2em;
     margin-top: 10px;
@@ -70,8 +82,8 @@ section h2 {
 }
 
 .skills-list span {
-    background: #007BFF;
-    color: #fff;
+    background: var(--primary-color);
+    color: var(--text-color);
     padding: 5px 10px;
     margin: 5px;
     border-radius: 5px;
@@ -89,17 +101,13 @@ section h2 {
     border-radius: 10px;
 }
 
-.project h3 {
-    margin: 10px 0;
-}
-
-.project p {
+.project h3, .project p {
     margin: 10px 0;
 }
 
 .project a {
-    background: #007BFF;
-    color: #fff;
+    background: var(--primary-color);
+    color: var(--text-color);
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -122,8 +130,8 @@ form input, form textarea {
 }
 
 form button {
-    background: #007BFF;
-    color: #fff;
+    background: var(--primary-color);
+    color: var(--text-color);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -131,8 +139,8 @@ form button {
 }
 
 footer {
-    background: #333;
-    color: #fff;
+    background: var(--secondary-color);
+    color: var(--text-color);
     text-align: center;
     padding: 10px 0;
     position: fixed;
@@ -141,22 +149,37 @@ footer {
 }
 
 .dark-mode {
-    background-color: #121212;
-    color: #e0e0e0;
+    background-color: var(--dark-background);
+    color: var(--dark-text);
 }
 
 .dark-mode header {
-    background-color: #1c1c1c;
+    background-color: var(--dark-secondary);
 }
 
 .dark-mode .btn, .dark-mode .project a {
-    background-color: #1e88e5;
+    background-color: var(--dark-primary);
 }
 
 .dark-mode .skills-list span {
-    background-color: #1e88e5;
+    background-color: var(--dark-primary);
 }
 
 .dark-mode footer {
-    background-color: #1c1c1c;
+    background-color: var(--dark-secondary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header, footer {
+        padding: 15px 0;
+    }
+
+    section {
+        padding: 30px 0;
+    }
 }
