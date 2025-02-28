@@ -6,5 +6,13 @@ document.querySelectorAll('.nav-links a').forEach(link => {
         if (targetSection) {
             targetSection.scrollIntoView({ behavior: 'smooth' });
         }
+        function toggleProject(id) {
+    var project = document.getElementById(id);
+    if (project.style.display === "block") {
+        project.style.display = "none";
+    } else {
+        project.style.display = "block";
+    }
+}
     });
 });
