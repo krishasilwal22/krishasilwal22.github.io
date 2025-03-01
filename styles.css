@@ -164,10 +164,14 @@ button {
     line-height: 1.5; /* 1.5 spacing inside lists */
 }
 
-/* Ensure video iframes and datasets align correctly */
-iframe {
-    margin: 10px auto;
-    display: block; /* Centers the video */
+/* Ensure YouTube videos maintain a normal aspect ratio */
+.project-details iframe {
+    width: 560px;  /* Standard YouTube embed width */
+    height: 315px; /* Standard YouTube embed height */
+    max-width: 100%; /* Ensures responsiveness */
+    display: block;
+    margin: 20px auto; /* Centers the video */
+    border-radius: 10px; /* Optional: Adds rounded corners for aesthetics */
 }
 
 /* Ensure project grid remains well-spaced */
