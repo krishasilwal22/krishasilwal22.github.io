@@ -38,10 +38,13 @@ nav ul li a {
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid #ff4d79;
+    width: 150px; /* Set width */
+    height: 150px; /* Set height */
+    object-fit: cover; /* Ensures the image fits inside the circle */
+    border-radius: 50%; /* Makes the image circular */
+    border: 3px solid #ff4d79; /* Adds a border (optional) */
+    display: block;
+    margin: 20px auto; /* Centers the image */
 }
 
 .buttons {
