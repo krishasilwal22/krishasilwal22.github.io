@@ -140,6 +140,7 @@ button {
     text-align: justify; /* Aligns text neatly */
     max-width: 850px; /* Prevents text from stretching too wide */
     margin: auto; /* Centers content */
+    line-height: 1.5; /* Adds 1.5 spacing */
 }
 
 /* Ensure uniform spacing between project cards */
@@ -151,11 +152,13 @@ button {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: left; /* Keeps content aligned properly */
+    line-height: 1.5; /* 1.5 spacing for better readability */
 }
 
 /* Maintain a structured layout for text inside projects */
 .project-details ul {
     padding-left: 20px; /* Aligns bullet points neatly */
+    line-height: 1.5; /* 1.5 spacing inside lists */
 }
 
 /* Ensure video iframes and datasets align correctly */
@@ -191,6 +194,12 @@ iframe {
 .project-details ul {
     max-width: 850px;
     margin: auto;
+    line-height: 1.5; /* 1.5 line spacing for all project text */
+}
+
+/* Make About Me and Contact sections 1.5 spaced too */
+#about, #contact {
+    line-height: 1.5;
 }
 
 /* Improve responsiveness */
