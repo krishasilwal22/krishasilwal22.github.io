@@ -218,4 +218,16 @@ iframe {
     form input, form textarea {
         width: 90%; /* Ensures form elements don't break on mobile */
     }
+    /* Footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+    
 }
