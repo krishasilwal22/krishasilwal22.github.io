@@ -135,3 +135,75 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+/* Ensure uniform alignment of project descriptions */
+.project-details {
+    text-align: justify; /* Aligns text neatly */
+    max-width: 850px; /* Prevents text from stretching too wide */
+    margin: auto; /* Centers content */
+}
+
+/* Ensure uniform spacing between project cards */
+.project-card {
+    width: 100%;
+    max-width: 900px; /* Set a max width to keep them even */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left; /* Keeps content aligned properly */
+}
+
+/* Maintain a structured layout for text inside projects */
+.project-details ul {
+    padding-left: 20px; /* Aligns bullet points neatly */
+}
+
+/* Ensure video iframes and datasets align correctly */
+iframe {
+    margin: 10px auto;
+    display: block; /* Centers the video */
+}
+
+/* Ensure project grid remains well-spaced */
+.project-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+/* Ensure download buttons look consistent */
+.project-details .btn {
+    display: block;
+    width: fit-content;
+    margin: 15px auto;
+    text-align: center;
+    padding: 10px 15px;
+    background-color: #ff4d79;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Ensure uniform text structure across all sections */
+.project-details p, 
+.project-details ul {
+    max-width: 850px;
+    margin: auto;
+}
+
+/* Improve responsiveness */
+@media (max-width: 768px) {
+    .project-card {
+        width: 90%; /* Makes it fit better on smaller screens */
+    }
+
+    #about, #contact {
+        width: 90%; /* Adjust about and contact width on smaller screens */
+    }
+
+    form input, form textarea {
+        width: 90%; /* Ensures form elements don't break on mobile */
+    }
+}
